@@ -1,0 +1,35 @@
+Para iniciar con un proyecto de node es necesario el comando 
+    - npm init y llenar los campos que solicita
+
+Es necesario instalar varias dependencias con el siguiente comando 
+    - npm i --save nodemon body-parser express
+        - body-parser es requerido por parte de node para representar la info 
+        - nodemon es el servidor auto actualizable 
+        - express es el servidor 
+
+En la carpeta public va todo lo esttico css, html ,imagenes y demas
+
+En server van modelos, rutas, archivos de config  y vistas 
+
+Para poder enlazar hojas de estilo con node, es necesario almacenarlas en la carpeta esttatica public pero es necesario hacerle saber a node que en esa parte encontrara la hoja de estilos, entonces en el index se agrega
+
+
+sequelize es un orm para nodejs, simplifican la parte de relacionar las tablas y datos y la parte de consultarlos 
+
+    - para conectar node con mysql se necesitan los siguientes paquetes
+        - nom i --save mysql2 sequelize
+
+
+
+Recapitulado de nuevo todo lo aprendido 
+    - Se tienen 2 rutas la public donde van los archivos estaticos y la de server en donde van toda la logica del negocio 
+        - En la server el archivo principal de configuracion es el index que esta en la raiz, ahi se dice que usamos express, las rutas, las vistas y que carpeta tiene el public y poner variables locales que se pueden usar en archivos 
+
+        - Vimos el middleware, que es cuando se usa el return next();, el middleware es cuando se le dice a node que use un pedazo de codigo pero despues de esa funcion siga ejecutando las demas funciones que se tengan si no se queda estancado en esa funcion 
+
+        - Toda la descripcion de ls bd va en los modelos
+        - Las rutas son los endpoints
+        - El controller obtiene los datos desde el modelo y decide que vista va a mostrar
+
+        
+
