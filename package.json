@@ -4,7 +4,8 @@
   "description": "Aprendiendo nodejs, squelize y express",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon server"
+    "dev": "nodemon server",
+    "start": "node server"
   },
   "author": "Emanuel Rosales @emanuel_dlcruz",
   "license": "ISC",
@@ -15,5 +16,8 @@
     "nodemon": "^2.0.4",
     "pug": "^3.0.0",
     "sequelize": "^5.21.13"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0"
   }
 }

@@ -1,6 +1,13 @@
 const Sequelize = require('sequelize');
 // conexion a la base de datos 
 const db = require('../config/database');
+db.authenticate()
+.then(() => {
+    console.log('Connection has been established successfully.');
+  })
+  .catch(err => {
+    console.error('Unable to connect to the database:', err);
+  });
 
 // definicion del modelo 
 const Viajes = db.define('viajes', {

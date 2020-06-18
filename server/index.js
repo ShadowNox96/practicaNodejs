@@ -15,6 +15,9 @@ const configs = require('./config');
 // en esta parte se usa la libreria body parser para poder leer los elementos que vengan en el body de la peticion htttp
 const bodyParser = require('body-parser');
 
+// requiriendo dotenv 
+require('dotenv').config({ path: 'variables.env'});
+
 
 
 // habilitar pug 
@@ -52,4 +55,9 @@ app.use(bodyParser.urlencoded({extended: true}));
 // Cargando todas las rutas desde el archivo de rutas
 app.use('/',routes());
 
-app.listen(3200); 
+// Puerto y host para la app 
+const host = process.env.HOST || '0.0.0.0';
+const port = process.env.PORT || 3000;
+app.listen(port, host, () => {
+    console.log('Servidor funcionando correctamente');
+}); 

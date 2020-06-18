@@ -108,4 +108,5 @@ dist
 # Stores VSCode versions used for testing VSCode extensions
 .vscode-test
 
-# End of https://www.toptal.com/developers/gitignore/api/node
+# Las variables son de entorno y no se deben de agregar 
+variables.env

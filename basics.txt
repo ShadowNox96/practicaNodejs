@@ -31,5 +31,8 @@ Recapitulado de nuevo todo lo aprendido
         - Las rutas son los endpoints
         - El controller obtiene los datos desde el modelo y decide que vista va a mostrar
 
-        
 
+
+Para el despliegue del sistema es ncesario instalar 
+    - npm install --save-dev dotenv 
+    - Esta dependencia lo que nos permite es poder generar variables de entorno es decir variables para desarrollo local y otras para el servidor de heroku o por ejemplo los datos de la bd son unos y el servidor son otros
